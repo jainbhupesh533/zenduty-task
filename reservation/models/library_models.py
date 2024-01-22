@@ -4,14 +4,14 @@ from ..models.user import User
 
 # Create your models here.
 class Author(models.Model):
-	name = models.CharField(max_length= 50, db_index=True)
+	name = models.CharField(max_length= 150, db_index=True)
 
 	def __str__(self):
 		return self.name
 
 
 class Books(models.Model):
-	name = models.CharField(max_length=50, db_index=True)
+	title = models.CharField(max_length=150, db_index=True)
 	author = models.ForeignKey(Author, on_delete=models.CASCADE, db_index=True)
 	available_copies = models.PositiveIntegerField(default=0)
 

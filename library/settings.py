@@ -78,9 +78,9 @@ WSGI_APPLICATION = 'library.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'zenduty',
+        'NAME': 'zentest',
         'USER':'bhupesh',
-        'PASSWORD': 'test',
+        'PASSWORD': 'enguru',
         'HOST': 'localhost',
         'PORT': 5432,
     }
